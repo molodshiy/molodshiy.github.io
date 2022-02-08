@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <title>TranslateX</title>
+  <style>
+      .container {
+          background-color: #1b1b3e;
+          padding: 20px;
+          font-size: 48px;
+          color: white;
+          font-family: sans-serif;
+      }
+
+      #scroll {
+          background: blue;
+          border: 1px solid white;
+          border-radius: 10px;
+          width: 20vw;
+          padding: 20px;
+          animation-name: new1;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+      }
+
+      @keyframes new1 {
+          0% {
+              transform: translateX(75vw);
+          }
+          100% {
+              transform: translateX(50vw);
+          }
+      }
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <div id="scroll">CSS transform translateX</div>
+</div>
+
+</body>
+</html>

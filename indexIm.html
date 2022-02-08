@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <title>Move to Left Image</title>
+  <style>
+      .container {
+          border: 1px solid red;
+          background-color: #1b1b3e;
+          padding: 20px;
+          font-weight: bold;
+      }
+
+      #scroll {
+          position: relative;
+          width: 20vw;
+          padding: 20px;
+          animation-name: new1;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+      }
+
+      img {
+          width: inherit;
+      }
+
+      @keyframes new1 {
+          0% {
+              left: 75vw;
+          }
+          100% {
+              left: 50vw;
+          }
+      }
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <div id="scroll"><img src="moveLeft.png"></div>
+</div>
+
+</body>
+</html>
