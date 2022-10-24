@@ -1,0 +1,222 @@
+{
+  "cards": [
+    {
+      "type": "start",
+      "header": "hw.design",
+      "bgImg": "./assets/sphere-white.png",
+      "bgColor": "linear-gradient(60.44deg, #CCCCCC 0%, #FFFEFE 65.91%)",
+      "circleSize": 70,
+      "headerColor": "black",
+      "banner": "Brand Performance Indicator",
+      "bannerPolicy": "by hw.d",
+      "job": "Ein Analysetool zur Ermittlung Ihrer Markenperformance",
+      "buttons": ["Start"],
+      "buttonsColor": ["#FF3D00"],
+      "beforeStartBgStyles": {
+        "bgImg": "./assets/sphere-white.png",
+        "circleSize": 150,
+        "bgColor": "E3E3E3",
+        "opacity": 0
+      }
+    },
+    {
+      "type": "info",
+      "header": "fbpi-check",
+      "circleSize": 30,
+      "bgImg": "./assets/sphere-white.png",
+      "bgColor": "linear-gradient(60.44deg, #CCCCCC 0%, #FFFEFE 65.91%)",
+      "slidesShowTime": 4000,
+      "headerColor": "black",
+      "slides": ["Disruption", "Transformation", "Wettbewerb"],
+      "text": "Wie zukunftsfähig ist Ihr Unternehmen positioniert?",
+      "textGray": "Nur 2 x 4 Fragen, und Sie erhalten eine schnelle, valide Antwort darauf.",
+      "textBlack": "Inklusive Vergleich zu anderen Unternehmen.",
+      "buttons": ["zurück", "weiter"],
+      "buttonsColor": ["#0000004D", "#FF3D00"]
+    },
+    {
+      "type": "intro",
+      "header": "A/B— nachhaltigkeit",
+      "textGrayColorStart": "#FDD21D",
+      "textGrayColor": "#FDD21D4D",
+      "textBlackColor": "#FDD21D",
+      "circleSize": 230,
+      "bgImg": "./assets/sphere-blue.png",
+      "bgColor": "#090CE3",
+      "headerColor": "#FDD21D",
+      "textGray": "Kein Unternehmen kann es sich mehr erlauben, Nachhaltigkeit zu vernachlässigen — ökologisch, sozial und verantwortungsvoll-unternehmerisch.",
+      "textBlack": "Nachhaltigkeit wird immer mehr zu einem wettbewerbsentscheidenden Faktor.",
+      "buttons": ["zurück", "weiter"],
+      "buttonsColor": ["#FFFEFE80", "#FF3D00"]
+    },
+    {
+      "type": "slides",
+      "color": "#FDD21D",
+      "darkColor": "#FDD21D4D",
+      "bgColor": "#090CE3",
+      "headerColor": "#FDD21D",
+      "circleSize": 95,
+      "header": "internes potenzial",
+      "bgImg": "./assets/sphere-blue.png",
+      "buttons": ["zurück", "weiter"],
+      "buttonsColor": ["#FFFEFE80", "#FF3D00"],
+      "textRangeAnimationLeft": "sehr schwach",
+      "textRangeAnimationRight": "sehr stark",
+      "slides": [
+        {
+          "circleSize": 95,
+          "description": "Wie stark ist Ihr",
+          "question": "Personalisierung Ihres Markenauftritts durch Digital Customer Intelligence?",
+          "criteria": [
+            "Nachhaltige",
+            "Produkte",
+            "Nachhaltige",
+            "Kreislauf",
+            "Enanagement"
+          ]
+        },
+        {
+          "circleSize": 75,
+          "description": "Wie stark ist Ihr Unternehmen aufgestellt im Hinblick auf",
+          "question": "Zukunftsrelevante Innovationen?",
+          "criteria": [
+            "Nachhaltige Technologien",
+            "Energie- und Wassermanagement",
+            "Nachhaltige Produkte",
+            "Nachhaltige Produkte",
+            "Kreislaufwirtschaft/Recycling"
+          ]
+        },
+        {
+          "circleSize": 55,
+          "description": "Wie stark ist Ihr Unternehmen aufgestellt im Hinblick auf",
+          "question": "zukunftsorientierte Themen und Botschaften?",
+          "criteria": [
+            "Energie- und Wassermanagement",
+            "Nachhaltige Produkte",
+            "Nachhaltige Produkte",
+            "Nachhaltige Technologien",
+            "Kreislaufwirtschaft/Recycling"
+          ]
+        },
+        {
+          "circleSize": 35,
+          "description": "Nun zu Ihrer Einschätzung des <b>externen</b> Markenbildes:",
+          "question": "Wie faszinierend wird Ihr Unternehmen aufgrund seines <b>Markenauftritts</b> wahrgenommen?",
+          "criteria": [
+            "Kreislaufwirtschaft/Recycling",
+            "Energie- und Wassermanagement",
+            "Nachhaltige Produkte",
+            "Nachhaltige Produkte",
+            "Nachhaltige Technologien"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "intro",
+      "header": "A/B— nachhaltigkeit",
+      "textGrayColor": "#0A08C34D",
+      "textGrayColorStart": "#0E15BA",
+      "textBlackColor": "#0E15BA",
+      "circleSize": 230,
+      "bgImg": "./assets/sphere-yellow.png",
+      "bgColor": "#D9D113",
+      "headerColor": "#0E15BA",
+      "textGray": "Der zweite substanzielle Faktor für langfristigen Erfolg ist, das Unternehmen als faszinierende Marke zu profilieren — progressiv, digital und innovativ.",
+      "textBlack": "Das gilt immer mehr und insbesondere auch für B2B-Unternehmen.",
+      "buttons": ["zurück", "weiter"],
+      "buttonsColor": ["#0000004D", "#FF3D00"]
+    },
+    {
+      "type": "slides",
+      "color": "#0E15BA",
+      "darkColor": "#0A08C34D",
+      "bgColor": "#D9D113",
+      "headerColor": "#0E15BA",
+      "circleSize": 95,
+      "header": "internes image",
+      "bgImg": "./assets/sphere-yellow.png",
+      "buttons": ["zurück", "weiter"],
+      "textRangeAnimationLeft": "sehr schwach",
+      "textRangeAnimationRight": "sehr stark",
+      "buttonsColor": ["#0000004D", "#FF3D00"],
+      "slides": [
+        {
+          "circleSize": 95,
+          "description": "Wie stark ist Ihr",
+          "question": "Personalisierung Ihres Markenauftritts durch Digital Customer Intelligence?",
+          "criteria": [
+            "Nachhaltige",
+            "Produkte",
+            "Nachhaltige",
+            "Kreislauf",
+            "Enanagement"
+          ]
+        },
+        {
+          "circleSize": 75,
+          "description": "Wie stark ist Ihr Unternehmen aufgestellt im Hinblick auf",
+          "question": "Zukunftsrelevante Innovationen?",
+          "criteria": [
+            "Nachhaltige Technologien",
+            "Energie- und Wassermanagement",
+            "Nachhaltige Produkte",
+            "Nachhaltige Produkte",
+            "Kreislaufwirtschaft/Recycling"
+          ]
+        },
+        {
+          "circleSize": 55,
+          "description": "Wie stark ist Ihr Unternehmen aufgestellt im Hinblick auf",
+          "question": "zukunftsorientierte Themen und Botschaften?",
+          "criteria": [
+            "Energie- und Wassermanagement",
+            "Nachhaltige Produkte",
+            "Nachhaltige Produkte",
+            "Nachhaltige Technologien",
+            "Kreislaufwirtschaft/Recycling"
+          ]
+        },
+        {
+          "circleSize": 35,
+          "description": "Nun zu Ihrer Einschätzung des <b>externen</b> Markenbildes:",
+          "question": "Wie faszinierend wird Ihr Unternehmen aufgrund seines <b>Markenauftritts</b> wahrgenommen?",
+          "criteria": [
+            "Kreislaufwirtschaft/Recycling",
+            "Energie- und Wassermanagement",
+            "Nachhaltige Produkte",
+            "Nachhaltige Produkte",
+            "Nachhaltige Technologien"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "intro",
+      "header": "fbri",
+      "textGrayColorStart": "black",
+      "textGrayColor": "#0000004D",
+      "textBlackColor": "#FF3D00",
+      "circleSize": 80,
+      "bgImg": "./assets/sphere-white.png",
+      "bgColor": "linear-gradient(60.44deg, #CCCCCC 0%, #FFFEFE 65.91%)",
+      "headerColor": "black",
+      "textGray": "Vielen Dank!",
+      "textBlack": "Zur Auswertung",
+      "isTextBlackForwardLink": true,
+      "buttons": ["zurück"],
+      "buttonsColor": ["#0000004D"]
+    },
+    {
+      "type": "chart",
+      "header": "hw.design",
+      "circleSize": 100,
+      "headerColor": "black",
+      "buttons": ["zurück", ""],
+      "bgImg": "./assets/sphere-white.png",
+      "bgColor": "linear-gradient(60.44deg, #CCCCCC 0%, #FFFEFE 65.91%)",
+      "buttonsColor": ["#0000004D", "#FF3D00"]
+    }
+  ]
+}

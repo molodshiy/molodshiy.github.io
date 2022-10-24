@@ -1,0 +1,137 @@
+@mixin anim-filter($filter, $value) {
+  filter: #{$filter}unquote('(#{$value})');
+}
+@mixin anim-transition($property, $value) {
+  transition: $property, $value;
+}
+@mixin anim-transform($property, $value) {
+  transform: #{$property}unquote('(#{$value})');
+}
+
+.text-anim {
+  span {
+    opacity: 0;
+    @include anim-transition(translateZ, 550ms);
+    @include anim-filter(blur, 25px);
+    @include anim-transform(translateZ, 0);
+  }
+
+  $letters: 22; //Define number of letters in animation - including spaces
+  $timing: 35ms; //Delay between letters
+
+  //Sets timing differntly for each letter
+  @while $letters > 0 {
+    span:nth-child(#{$letters}) {
+      transition-delay: $timing * $letters;
+    }
+    $letters: $letters - 1;
+  }
+}
+
+.text-animButton {
+  span {
+    opacity: 0;
+    @include anim-transition(translateZ, 550ms);
+    @include anim-filter(blur, 25px);
+    @include anim-transform(translateZ, 0);
+  }
+
+  $letters: 22; //Define number of letters in animation - including spaces
+  $timing: 35ms; //Delay between letters
+
+  //Sets timing differntly for each letter
+  @while $letters > 0 {
+    span:nth-child(#{$letters}) {
+      transition-delay: $timing * $letters + 5000ms;
+    }
+    $letters: $letters - 1;
+  }
+}
+
+.text-animButtonInfo {
+  span {
+    opacity: 0;
+    @include anim-transition(translateZ, 550ms);
+    @include anim-filter(blur, 25px);
+    @include anim-transform(translateZ, 0);
+  }
+
+  $letters: 22; //Define number of letters in animation - including spaces
+  $timing: 35ms; //Delay between letters
+
+  //Sets timing differntly for each letter
+  @while $letters > 0 {
+    span:nth-child(#{$letters}) {
+      transition-delay: $timing * $letters + 5000ms;
+    }
+    $letters: $letters - 1;
+  }
+}
+
+.text-animRangeLabel {
+  span {
+    opacity: 0;
+    @include anim-transition(translateZ, 550ms);
+    @include anim-filter(blur, 25px);
+    @include anim-transform(translateZ, 0);
+  }
+
+  $letters: 22; //Define number of letters in animation - including spaces
+  $timing: 35ms; //Delay between letters
+
+  //Sets timing differntly for each letter
+  @while $letters > 0 {
+    span:nth-child(#{$letters}) {
+      transition-delay: $timing * $letters + 3000ms;
+    }
+    $letters: $letters - 1;
+  }
+}
+
+.text-animRangeLabelLeft {
+  span {
+    opacity: 0;
+    @include anim-transition(translateZ, 550ms);
+    @include anim-filter(blur, 25px);
+    @include anim-transform(translateZ, 0);
+  }
+
+  $letters: 22; //Define number of letters in animation - including spaces
+  $timing: 35ms; //Delay between letters
+  $count: 0;
+  //Sets timing differntly for each letter
+  @while $letters > 0 {
+    span:nth-child(#{$letters}) {
+      transition-delay: $timing * $count + 3000ms;
+    }
+    $count: $count + 1;
+    $letters: $letters - 1;
+  }
+}
+
+
+//Class added that animates
+.text-anim.animate span {
+  opacity: 1;
+  @include anim-filter(blur, 0px);
+}
+
+.text-animButton.animateButton span {
+  opacity: 1;
+  @include anim-filter(blur, 0px);
+}
+
+.text-animButtonInfo.animateButton span {
+  opacity: 1;
+  @include anim-filter(blur, 0px);
+}
+
+.text-animRangeLabel.animateRangeLabel span {
+  opacity: 1;
+  @include anim-filter(blur, 0px);
+}
+
+.text-animRangeLabelLeft.animateRangeLabelLeft span {
+  opacity: 1;
+  @include anim-filter(blur, 0px);
+}
