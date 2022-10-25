@@ -59,13 +59,14 @@ const SlideThird = styled.div`
 
 const TextContainer = styled.div`
   width: 100%;
+  max-width: 1600px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px 140px;
+  margin: 0 20px 140px;
   box-sizing: border-box;
   
   .slick-slider {
@@ -73,11 +74,11 @@ const TextContainer = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    padding: 0 40px 140px;
+    margin: 0 40px 140px;
   }
   
   @media screen and (min-width: 1919px) {
-    padding: 0 160px 140px;
+    margin: 0 160px 140px;
   }
 `;
 

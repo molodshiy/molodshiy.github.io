@@ -39,7 +39,6 @@ function Card(props) {
                   stopOnLastSlide: true,
                 }}
                 modules={[EffectFade, Autoplay, Pagination]}
-                className="mySwiper"
               >
                 {criteria.map((item, index) => <SwiperSlide key={index} data-swiper-autoplay={index === 0 ? 3500 : 500}>
                   <S.Criteria key={item} color={darkColor} className={"textSwiper"}>{item}</S.Criteria>

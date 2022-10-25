@@ -8,20 +8,24 @@ import Header from "../../components/Header/Header";
 function Slide(props) {
   const [activeSlide, setActiveSlide] = useState(-1);
   const [isActive, setIsActive] = useState(false);
-  const { setNextPage, setBgImgSize, data, isVisible } = props;
-  const {header, headerColor, color, darkColor, buttons, buttonsColor, slides, textRangeAnimationLeft, textRangeAnimationRight} = props.data;
+  const { setNextPage, setPrevPage, setBgImgSize, data, isVisible } = props;
+  const {header, headerColor, color, darkColor, buttons, buttonsColor, slides, textRangeAnimationLeft, textRangeAnimationRight, hideBackButtonFirstSlide} = props.data;
 
   useEffect(() => {
-    if(isVisible) {
+    if(isVisible && activeSlide === -1) {
       setActiveSlide(0);
       setIsActive(true);
     }
-  }, [isVisible]);
+  }, [isVisible, activeSlide]);
 
   const handleBackClick = () => {
     if(activeSlide > 0) {
       setActiveSlide(activeSlide - 1);
       setBgImgSize(slides[activeSlide -1].circleSize);
+    }
+
+    if(activeSlide === 0) {
+      setPrevPage();
     }
   }
 
@@ -64,7 +68,7 @@ function Slide(props) {
               </S.RangeLabelRight>
             </S.Range>
 
-            <Navigation buttonsColor={buttonsColor} textButton={activeSlide === 0 ? '' : buttons[0]} textAnimationButton={buttons[1]} setNextPage={handleForwardClick} setPrevPage={handleBackClick} />
+            <Navigation buttonsColor={buttonsColor} textButton={hideBackButtonFirstSlide && activeSlide === 0 ? '' : buttons[0]} textAnimationButton={buttons[1]} setNextPage={handleForwardClick} setPrevPage={handleBackClick} />
           </S.Slide>
       ))}
     </S.SlideBg>

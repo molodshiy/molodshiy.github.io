@@ -15,7 +15,7 @@
       "beforeStartBgStyles": {
         "bgImg": "./assets/sphere-white.png",
         "circleSize": 150,
-        "bgColor": "E3E3E3",
+        "bgColor": "linear-gradient(60.44deg, #CCCCCC 0%, #FFFEFE 65.91%)",
         "opacity": 0
       }
     },
@@ -46,8 +46,8 @@
       "headerColor": "#FDD21D",
       "textGray": "Kein Unternehmen kann es sich mehr erlauben, Nachhaltigkeit zu vernachlässigen — ökologisch, sozial und verantwortungsvoll-unternehmerisch.",
       "textBlack": "Nachhaltigkeit wird immer mehr zu einem wettbewerbsentscheidenden Faktor.",
-      "buttons": ["zurück", "weiter"],
-      "buttonsColor": ["#FFFEFE80", "#FF3D00"]
+      "buttons": ["", "weiter"],
+      "buttonsColor": ["", "#FF3D00"]
     },
     {
       "type": "slides",
@@ -58,6 +58,7 @@
       "circleSize": 95,
       "header": "internes potenzial",
       "bgImg": "./assets/sphere-blue.png",
+      "hideBackButtonFirstSlide": true,
       "buttons": ["zurück", "weiter"],
       "buttonsColor": ["#FFFEFE80", "#FF3D00"],
       "textRangeAnimationLeft": "sehr schwach",

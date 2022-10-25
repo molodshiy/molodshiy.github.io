@@ -58,26 +58,27 @@ const Slide3 = styled.div`
 `;
 
 const TextContainer = styled.div`
-  width: 100%;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px 140px;
-  box-sizing: border-box;
-  
-  .slick-slider {
-    width: 100%;
+  margin: 0 20px 140px;
+  width: clamp(200px, 69vw, 1330px);
+
+  @media screen and (max-width: 1919px) {
+    margin: 0 160px 140px;
+    width: max(750px, 73.242vw);
   }
 
-  @media screen and (min-width: 1024px) {
-    padding: 0 40px 140px;
+  @media screen and (max-width: 1024px) {
+    margin: 0 40px 140px;
+    width: max(600px, 78.125vw);
   }
-  
-  @media screen and (min-width: 1919px) {
-    padding: 0 160px 140px;
+
+  @media screen and (max-width: 768px) {
+    width: 78.125vw;
   }
 `;
 

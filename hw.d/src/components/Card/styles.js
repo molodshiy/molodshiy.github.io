@@ -140,9 +140,20 @@ const Wrapper = styled(Text)`
   .swiper-pagination-bullet {
     width: 6px;
     height: 6px;
-    margin: 1.5vh !important;
+    padding: 1.3vh !important;
     cursor: pointer;
     opacity: 1;
+    background: none;
+    outline: none;
+  }
+
+  .swiper-pagination-bullet::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    outline: none;
     background-color: ${props => props.darkColor};
   }
 
@@ -151,10 +162,15 @@ const Wrapper = styled(Text)`
       width: 8px;
       height: 8px;
     }
+    
+    .swiper-pagination-bullet::after {
+      width: 8px;
+      height: 8px;
+    }
   }
 
-  .swiper-pagination-bullet-active {
-    background-color: ${props => props.color};;
+  .swiper-pagination-bullet-active::after {
+    background-color: ${props => props.color};
   }
 `;
 
