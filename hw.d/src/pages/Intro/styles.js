@@ -10,51 +10,7 @@ const Container = styled.div`
   position: absolute;
   opacity: ${props => props.isVisible ? 1 : 0};
   z-index: ${props => props.isVisible ? 1 : -1};
-`;
-
-const Slides = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-`;
-
-const Slide1 = styled.div`
-  opacity: 0;
-  position: absolute;
-  @keyframes fadeInSlide1 {
-    0% { opacity: 0; }
-    70% { opacity: 1; }
-    100% { opacity: 0; }
-  }
-
-  animation: fadeInSlide1 1s ease-in-out 0.5s forwards;
-`;
-
-const Slide2 = styled.div`
-  opacity: 0;
-  position: absolute;
-  @keyframes fadeInSlide2 {
-    0% { opacity: 0; }
-    70% { opacity: 1; }
-    100% { opacity: 0; }
-  }
-
-  animation: fadeInSlide2 1s ease-in-out 1.5s forwards;
-`;
-
-const Slide3 = styled.div`
-  opacity: 0;
-  position: absolute;
-  @keyframes fadeInSlide3 {
-    0% { opacity: 0; }
-    70% { opacity: 1; }
-    100% { opacity: 0; }
-  }
-
-  animation: fadeInSlide3 1s ease-in-out 2.5s forwards;
+  //transition: opacity 0.5s ease-in-out;
 `;
 
 const TextContainer = styled.div`
@@ -64,16 +20,13 @@ const TextContainer = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 20px 140px;
   width: clamp(200px, 69vw, 1330px);
 
   @media screen and (max-width: 1919px) {
-    margin: 0 160px 140px;
     width: max(750px, 73.242vw);
   }
 
   @media screen and (max-width: 1024px) {
-    margin: 0 40px 140px;
     width: max(600px, 78.125vw);
   }
 
@@ -171,4 +124,4 @@ const TextBlack = styled.p`
 `;
 
 
-export {Container, Slides, Slide1, Slide2, Slide3, TextContainer, Text, TextGray, TextBlack};
+export {Container, TextContainer, Text, TextGray, TextBlack};

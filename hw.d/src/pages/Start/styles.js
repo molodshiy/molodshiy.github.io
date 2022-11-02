@@ -9,6 +9,9 @@ const Container = styled.div`
   align-items: center;
   position: absolute;
   opacity: ${props => props.isVisible ? 1 : 0};
+  //z-index: ${props => props.isVisible ? 1 : -1};
+  // ${props => props.isVisible ? 'opacity: 1; z-index: 1; transition: opacity 1s ease-in 0.3s;' : 'opacity: 0; z-index: -1; transition: opacity 0.3s ease-in;'};
+  //transition: opacity 0.5s ease-in-out;
   
 `;
 

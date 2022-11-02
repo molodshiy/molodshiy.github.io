@@ -5,6 +5,7 @@ const SlideBg = styled.div`
   position: absolute;
   opacity: ${props => props.isVisible ? 1 : 0};
   z-index: ${props => props.isVisible ? 1 : -1};
+  //transition: opacity 0.5s ease-in-out;
  `;
 
 const Slide = styled.div`

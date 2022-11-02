@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d5807365.css",
+    "main.js": "/static/js/main.1d7725e0.js",
+    "static/media/Agenda-Regular.otf": "/static/media/Agenda-Regular.b84b61d34ff17a8e2972.otf",
+    "static/media/logo.svg": "/static/media/logo.72693fad19886af7fe3c87e4db235cd8.svg",
+    "index.html": "/index.html",
+    "main.d5807365.css.map": "/static/css/main.d5807365.css.map",
+    "main.1d7725e0.js.map": "/static/js/main.1d7725e0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5807365.css",
+    "static/js/main.1d7725e0.js"
+  ]
+}

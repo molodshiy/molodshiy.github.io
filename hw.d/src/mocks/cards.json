@@ -4,7 +4,6 @@
       "type": "start",
       "header": "hw.design",
       "bgImg": "./assets/sphere-white.png",
-      "bgColor": "linear-gradient(60.44deg, #CCCCCC 0%, #FFFEFE 65.91%)",
       "circleSize": 70,
       "headerColor": "black",
       "banner": "Brand Performance Indicator",
@@ -15,7 +14,7 @@
       "beforeStartBgStyles": {
         "bgImg": "./assets/sphere-white.png",
         "circleSize": 150,
-        "bgColor": "linear-gradient(60.44deg, #CCCCCC 0%, #FFFEFE 65.91%)",
+        "bgGradient": "linear-gradient(60.44deg, #CCCCCC 0%, #FFFEFE 65.91%)",
         "opacity": 0
       }
     },
@@ -24,7 +23,6 @@
       "header": "fbpi-check",
       "circleSize": 30,
       "bgImg": "./assets/sphere-white.png",
-      "bgColor": "linear-gradient(60.44deg, #CCCCCC 0%, #FFFEFE 65.91%)",
       "slidesShowTime": 4000,
       "headerColor": "black",
       "slides": ["Disruption", "Transformation", "Wettbewerb"],
@@ -53,12 +51,10 @@
       "type": "slides",
       "color": "#FDD21D",
       "darkColor": "#FDD21D4D",
-      "bgColor": "#090CE3",
       "headerColor": "#FDD21D",
-      "circleSize": 95,
       "header": "internes potenzial",
+      "bgColor": "#090CE3",
       "bgImg": "./assets/sphere-blue.png",
-      "hideBackButtonFirstSlide": true,
       "buttons": ["zurück", "weiter"],
       "buttonsColor": ["#FFFEFE80", "#FF3D00"],
       "textRangeAnimationLeft": "sehr schwach",
@@ -135,7 +131,6 @@
       "darkColor": "#0A08C34D",
       "bgColor": "#D9D113",
       "headerColor": "#0E15BA",
-      "circleSize": 95,
       "header": "internes image",
       "bgImg": "./assets/sphere-yellow.png",
       "buttons": ["zurück", "weiter"],
@@ -201,7 +196,6 @@
       "textBlackColor": "#FF3D00",
       "circleSize": 80,
       "bgImg": "./assets/sphere-white.png",
-      "bgColor": "linear-gradient(60.44deg, #CCCCCC 0%, #FFFEFE 65.91%)",
       "headerColor": "black",
       "textGray": "Vielen Dank!",
       "textBlack": "Zur Auswertung",
@@ -216,7 +210,6 @@
       "headerColor": "black",
       "buttons": ["zurück", ""],
       "bgImg": "./assets/sphere-white.png",
-      "bgColor": "linear-gradient(60.44deg, #CCCCCC 0%, #FFFEFE 65.91%)",
       "buttonsColor": ["#0000004D", "#FF3D00"]
     }
   ]

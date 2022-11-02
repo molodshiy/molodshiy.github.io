@@ -9,12 +9,16 @@ function Slide(props) {
   const [activeSlide, setActiveSlide] = useState(-1);
   const [isActive, setIsActive] = useState(false);
   const { setNextPage, setPrevPage, setBgImgSize, data, isVisible } = props;
-  const {header, headerColor, color, darkColor, buttons, buttonsColor, slides, textRangeAnimationLeft, textRangeAnimationRight, hideBackButtonFirstSlide} = props.data;
+  const {header, headerColor, color, darkColor, buttons, buttonsColor, slides, textRangeAnimationLeft, textRangeAnimationRight} = props.data;
 
   useEffect(() => {
-    if(isVisible && activeSlide === -1) {
+    if(!isVisible) return;
+
+    if(activeSlide === -1) {
       setActiveSlide(0);
       setIsActive(true);
+    } else {
+      setBgImgSize(slides[activeSlide].circleSize);
     }
   }, [isVisible, activeSlide]);
 
@@ -68,7 +72,7 @@ function Slide(props) {
               </S.RangeLabelRight>
             </S.Range>
 
-            <Navigation buttonsColor={buttonsColor} textButton={hideBackButtonFirstSlide && activeSlide === 0 ? '' : buttons[0]} textAnimationButton={buttons[1]} setNextPage={handleForwardClick} setPrevPage={handleBackClick} />
+            <Navigation buttonsColor={buttonsColor} textButton={buttons[0]} textAnimationButton={buttons[1]} setNextPage={handleForwardClick} setPrevPage={handleBackClick} />
           </S.Slide>
       ))}
     </S.SlideBg>

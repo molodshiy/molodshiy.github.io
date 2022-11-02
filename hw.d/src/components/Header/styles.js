@@ -2,13 +2,13 @@ import styled from 'styled-components';
 
 const Header = styled.header`
   width: 100vw;
+  max-width: 1920px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   position: relative;
-  padding: min(20px, 3.5vh);
   box-sizing: border-box;
-  max-width: 1920px;
   letter-spacing: 0.22em;
 `;
 
@@ -22,7 +22,7 @@ const Logo = styled.div`
     min-width: 56px;
   }
   
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1920px) {
     width: 88px;
     min-width: 88px;
   }

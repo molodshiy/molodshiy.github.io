@@ -10,6 +10,8 @@ const Container = styled.div`
   position: absolute;
   opacity: ${props => props.isVisible ? 1 : 0};
   z-index: ${props => props.isVisible ? 1 : -1};
+  // ${props => props.isVisible ? 'opacity: 1; z-index: 1; transition: opacity 1s ease-in 0.3s;' : 'opacity: 0; z-index: -1; transition: opacity 0.3s ease-in;'};
+  //transition: opacity 0.5s ease-in-out;
 `;
 
 const Slides = styled.div`
@@ -21,44 +23,30 @@ const Slides = styled.div`
   position: relative;
 `;
 
-const SlideFirst = styled.div`
+const Slide = styled.div`
   opacity: 0;
   position: absolute;
-  @keyframes fadeInSlide1 {
+  
+  @keyframes fadeInSlide {
     0% { opacity: 0; }
     70% { opacity: 1; }
     100% { opacity: 0; }
   }
-
-  animation: fadeInSlide1 1s ease-in-out 0.5s forwards;
 `;
 
-const SlideSecond = styled.div`
-  opacity: 0;
-  position: absolute;
-  @keyframes fadeInSlide2 {
-    0% { opacity: 0; }
-    70% { opacity: 1; }
-    100% { opacity: 0; }
-  }
-
-  animation: fadeInSlide2 1s ease-in-out 1.5s forwards;
+const SlideFirst = styled(Slide)`
+  animation: fadeInSlide 1s ease-in-out 0.5s forwards;
 `;
 
-const SlideThird = styled.div`
-  opacity: 0;
-  position: absolute;
-  @keyframes fadeInSlide3 {
-    0% { opacity: 0; }
-    70% { opacity: 1; }
-    100% { opacity: 0; }
-  }
+const SlideSecond = styled(Slide)`
+  animation: fadeInSlide 1s ease-in-out 1.5s forwards;
+`;
 
-  animation: fadeInSlide3 1s ease-in-out 2.5s forwards;
+const SlideThird = styled(Slide)`
+  animation: fadeInSlide 1s ease-in-out 2.5s forwards;
 `;
 
 const TextContainer = styled.div`
-  width: 100%;
   max-width: 1600px;
   flex-grow: 1;
   display: flex;
@@ -66,19 +54,23 @@ const TextContainer = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 20px 140px;
   box-sizing: border-box;
+  margin-bottom: 85px;
+  width: 78.125vw;
   
-  .slick-slider {
-    width: 100%;
+
+  @media screen and (min-width: 1919px) {
+    width: clamp(200px, 69vw, 1330px);
+    margin-bottom: 130px;
   }
 
   @media screen and (min-width: 1024px) {
-    margin: 0 40px 140px;
+    width: max(750px, 73.242vw);
   }
-  
-  @media screen and (min-width: 1919px) {
-    margin: 0 160px 140px;
+
+  @media screen and (min-width: 768px) {
+    width: max(600px, 78.125vw);
+    margin-bottom: 100px;
   }
 `;
 

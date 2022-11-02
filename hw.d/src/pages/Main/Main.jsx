@@ -17,23 +17,26 @@ function Main() {
   const [bgImg, setBgImg] = useState(defaultStyles.bgImg);
 
   useEffect(() => {
+    setBgImg(data.cards[activePage].bgImg);
+
     if(activePage === 0) {
       //when click back reset styles
       setBgImgSize(defaultStyles.circleSize);
       setBgColor(defaultStyles.bgColor);
       setOpacity(defaultStyles.opacity);
-      setBgImg(data.cards[activePage].bgImg);
 
       setTimeout(() => {
         setBgImgSize(data.cards[activePage].circleSize);
         setBgColor(data.cards[activePage].bgColor);
         setOpacity(1);
       }, 3000);
+    } else if (data.cards[activePage].type === "slides") {
+      setBgColor(data.cards[activePage].bgColor);
     } else {
       setBgImgSize(data.cards[activePage].circleSize);
       setBgColor(data.cards[activePage].bgColor);
-      setBgImg(data.cards[activePage].bgImg);
     }
+
   }, [activePage]);
 
   const setNextPage = () => {
@@ -45,7 +48,7 @@ function Main() {
   }
 
   return (
-    <Background size={bgImgSize} opacity={opacity} bgColor={bgColor} bgImg={bgImg}>
+    <Background size={bgImgSize} opacity={opacity} bgColor={bgColor} bgImg={bgImg} bgGradient={defaultStyles.bgGradient}>
       <Start isVisible={activePage === 0} setNextPage={setNextPage} setPrevPage={setPrevPage} data={data.cards[0]} />
       <Info isVisible={activePage === 1} setNextPage={setNextPage} setPrevPage={setPrevPage} data={data.cards[1]} />
       <Intro isVisible={activePage === 2} setNextPage={setNextPage} setPrevPage={setPrevPage} data={data.cards[2]} />

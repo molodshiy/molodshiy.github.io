@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import * as S from "./styles";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Pagination, Autoplay } from "swiper";
@@ -9,7 +9,16 @@ import "./styles.css";
 
 function Card(props) {
   const { index, color, darkColor, isActiveSlide, paginationLength, description, question, criteria } = props;
-  console.log(isActiveSlide)
+  const swiperRef = useRef();
+
+  useEffect(() => {
+   if(isActiveSlide){
+     swiperRef.current.autoplay.start();
+   } else {
+     swiperRef.current.autoplay.stop();
+   }
+  }, [isActiveSlide]);
+
   return (
     <S.Card>
       <S.Pagination color={darkColor}>
@@ -26,9 +35,11 @@ function Card(props) {
         </S.Question>
 
         <S.WrapperSwiper className={"setResizeText"}>
-          {isActiveSlide ?
             <S.Wrapper color={color} darkColor={darkColor} visible={isActiveSlide}>
               <Swiper
+                onSwiper={(swiper) => {
+                  swiperRef.current = swiper;
+                }}
                 effect={"fade"}
                 pagination={{
                   clickable: true,
@@ -45,7 +56,6 @@ function Card(props) {
                 </SwiperSlide>)}
               </Swiper>
             </S.Wrapper>
-            : null}
         </S.WrapperSwiper>
       </S.Container>
     </S.Card>

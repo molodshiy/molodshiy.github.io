@@ -15,14 +15,22 @@ const BackgroundWrapper = styled.div`
 const Background = styled.div`
   width: 100%;
   height: 100%;
-  position: absolute;
   background: ${props => "url(" + props.bgImg + ")"};
   background-position: center;
   background-repeat: no-repeat;
   opacity: ${props => props.opacity};
   background-size: ${props => props.size}vh;
-  transition: background-size 2s ease-in-out, opacity 2s linear;
-  position: relative;
+  transition: background 2s ease-in-out, opacity 2s ease-in-out;
+  position: absolute;
 `;
 
-export { BackgroundWrapper, Background };
+const BackgroundGradient = styled.div`
+  width: 100%;
+  height: 100%;
+  background: ${props => props.bgGradient};
+  opacity: ${props => props.opacity};
+  transition: opacity 2s ease-in-out;
+  position: absolute;
+`;
+
+export { BackgroundWrapper, Background, BackgroundGradient };
