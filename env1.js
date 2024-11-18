@@ -1,5 +1,3 @@
 const es = {
-  PUBLIC_HOST_ENV: 'in',
+  PUBLIC_HOST_ENV: 'de',
 };
-
-export { es };
