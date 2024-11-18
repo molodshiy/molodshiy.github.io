@@ -1,3 +1,3 @@
 const es = {
-  PUBLIC_HOST_ENV: 'de',
+  PUBLIC_HOST_ENV: 'in',
 };
