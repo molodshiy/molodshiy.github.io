@@ -2,12 +2,12 @@ Scenarist_SCC V1.0
 
 1
 00:00:00:00 00:00:05:00
-{\\an8}This caption is at the top of the screen.
+{\\an8}This caption is at the top of the screen.111
 
 2
 00:00:05:01 00:00:10:00
-{\\an2\\fs30}This caption is at the bottom with larger text.
+{\\an2\\fs30}This caption is at the bottom with larger text.111
 
 3
 00:00:10:01 00:00:15:00
-{\\an5\\c&HFFFFFF&}This caption has white color in the center.
+{\\an5\\c&HFFFFFF&}This caption has white color in the center.111
