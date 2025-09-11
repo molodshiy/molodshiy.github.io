@@ -2,21 +2,21 @@ WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:900000,LOCAL:00:00:00.000
 
 1
-00:00:05.171 --> 00:00:07.298 position: 50%
+00:00:01.171 --> 00:00:03.298 position: 50%
 Iris, trajectory.1111 position: 50%
 And make it good news.1111
 
 2
-00:00:07.382 --> 00:00:08.466 position: 50%
+00:00:03.382 --> 00:00:04.466 position: 50%
 Liquid fuel reserves1111
 
 3
-00:00:08.550 --> 00:00:10.093 position: 50%
+00:00:06.550 --> 00:00:7.093 position: 50%
 are insufficient111 position: 50%
 to correct our course--11111
 
 4
-00:00:10.176 --> 00:00:11.636 position: 50% line: 90% align: middle
+00:00:7.176 --> 00:00:11.636 position: 50% line: 90% align: middle
 Then we'll think1111 position: 50% line: 90% align: middle
 of something else, Iris.1111
 
