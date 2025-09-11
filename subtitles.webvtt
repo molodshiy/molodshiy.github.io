@@ -2,31 +2,31 @@ WEBVTT
 X-TIMESTAMP-MAP=MPEGTS:900000,LOCAL:00:00:00.000
 
 1
-00:00:01.171 --> 00:00:03.298 position: 50%
-Iris, trajectory.1111 position: 50%
+00:00:01.171 --> 00:00:03.298 line: 10% 
+Iris, trajectory.1111 line: 10% 
 And make it good news.1111
 
 2
-00:00:03.382 --> 00:00:04.466 position: 50%
-Liquid fuel reserves1111
+00:00:03.382 --> 00:00:04.466 line: 10% 
+Liquid fuel reserves1111 line: 10% 
 
 3
-00:00:06.550 --> 00:00:07.093 position: 50% line: 90% align: middle
-are insufficient111 position: 50% line: 90% align: middle
+00:00:06.550 --> 00:00:07.093 line: 20% 
+are insufficient111 line: 20% 
 to correct our course--11111
 
 4
-00:00:07.176 --> 00:00:11.636 position: 50% line: 90% align: middle
-Then we'll think1111 position: 50% line: 90% align: middle
+00:00:07.176 --> 00:00:11.636 line: 30% 
+Then we'll think1111 position: line: 30% 
 of something else, Iris.1111
 
 5
-00:00:11.720 --> 00:00:12.721 position: 50% line: 90% align: middle
-Something scientific.1111 position: 50% line: 90% align: middle
+00:00:11.720 --> 00:00:12.721 line: 40% 
+Something scientific.1111 line: 40% 
 
 6
-00:00:13.847 --> 00:00:15.432 position: 50% line: 90% align: middle
-TV RYAN CLARK: How can111 position: 50% line: 90% align: middle
+00:00:13.847 --> 00:00:15.432 line: 50% 
+TV RYAN CLARK: How can111 line: 50% 
 so much light...111
 
 7
