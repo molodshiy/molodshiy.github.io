@@ -1,7 +1,7 @@
 const style = document.createElement('style');
 style.textContent = `
 
-    #form-container {
+    #form-container123 {
      position: fixed;
       top: calc(50% - 170px);
       left: calc(50% - 210px);
@@ -17,14 +17,14 @@ style.textContent = `
       background: black;
     }
 
-    h1 {
+    .h1123 {
       color: white;
       font-size: 16px;
       margin: 0;
        gap: 5px;
     }
 
-    p.description {
+    p.description123 {
       color: white;
       font-size: 12px;
       margin: 0 0 2px;
@@ -32,7 +32,7 @@ style.textContent = `
       gap: 5px;
     }
 
-    .close-btn {
+    .close-btn123 {
       position: absolute;
       width: 80px;
       top: 10px;
@@ -45,7 +45,7 @@ style.textContent = `
       font-weight: bold;
     }
 
-    input, select, button {
+    .input123, .select123, .button123 {
       padding: 12px;
       background: black;
       color: white;
@@ -55,32 +55,31 @@ style.textContent = `
       box-sizing: border-box;
     }
 
-    .row {
+    .row123 {
       display: flex;
       gap: 10px;
     }
 
-    .row input, .row select {
+    .row .input123, .row .select123 {
       flex: 1;
     }
 
-    button {
+    .button123 {
       cursor: pointer;
       transition: background 0.3s;
     }
 
-    button:hover {
-      background: white;
-      color: black;
+    .button123:hover {
+      color: white;
     }
   `;
 document.head.appendChild(style);
 const formContainer = document.createElement('div');
-formContainer.id = 'form-container';
+formContainer.id = 'form-container123';
 document.body.appendChild(formContainer);
 
 const closeButton = document.createElement('button');
-closeButton.className = 'close-btn';
+closeButton.className = 'close-btn123';
 closeButton.innerHTML = 'CLOSE &times;';
 closeButton.onclick = () => {
   formContainer.style.display = 'none';
@@ -96,41 +95,46 @@ if (currentScript) {
   const myParam = params.get('slug');
   const myParam1 = params.get('id');
 const title = document.createElement('h1');
+title.className = 'h1123';
 title.textContent = myParam +' - ' +myParam1;
 formContainer.appendChild(title);
 }
 
 
 const description = document.createElement('p');
-description.className = 'description';
+description.className = 'description123';
 description.textContent = 'Friday, October 23 at 7.00 PM';
 formContainer.appendChild(description);
 
 const description1 = document.createElement('p');
-description1.className = 'description';
+description1.className = 'description123';
 description1.textContent = 'Dolby Burbank';
 formContainer.appendChild(description1);
 
 const row1 = document.createElement('div');
-row1.className = 'row';
+row1.className = 'row123';
 
 const firstName = document.createElement('input');
 firstName.placeholder = 'FIRST NAME';
+firstName.className = 'input123';
 
 const lastName = document.createElement('input');
 lastName.placeholder = 'LAST NAME';
+lastName.className = 'input123';
 
 row1.appendChild(firstName);
 row1.appendChild(lastName);
 
 const email = document.createElement('input');
 email.type = 'email';
+email.className = 'input123';
 email.placeholder = 'EMAIL ADDRESS';
 
 const row2 = document.createElement('div');
-row2.className = 'row';
+row2.className = 'row123';
 
 const guests = document.createElement('select');
+guests.className = 'select123';
 ['GUESTS', '0', '1', '2', '3'].forEach(val => {
   const option = document.createElement('option');
   option.textContent = val;
@@ -138,6 +142,7 @@ const guests = document.createElement('select');
 });
 
 const guild = document.createElement('select');
+guild.className = 'select123';
 ['GUILD', 'Warriors', 'Mages', 'Rogues'].forEach(val => {
   const option = document.createElement('option');
   option.textContent = val;
@@ -147,14 +152,13 @@ const guild = document.createElement('select');
 row2.appendChild(guests);
 row2.appendChild(guild);
 
-// --- 9. Кнопка CONFIRM RSVP ---
 const button = document.createElement('button');
+button.className = 'button123';
 button.textContent = 'CONFIRM RSVP';
 button.onclick = () => {
   alert('RSVP confirmed!');
 };
 
-// --- 10. Додати всі елементи у форму ---
 formContainer.appendChild(row1);
 formContainer.appendChild(email);
 formContainer.appendChild(row2);
