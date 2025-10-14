@@ -12,7 +12,6 @@
       display: flex;
       flex-direction: column;
       gap: 15px;
-      position: relative;
       padding: 20px;
       box-sizing: border-box;
       background: black;
