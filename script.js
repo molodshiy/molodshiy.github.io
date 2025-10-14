@@ -1,6 +1,6 @@
 
-      const style = document.createElement('style');
-      style.textContent = `
+      const style1 = document.createElement('style');
+      style1.textContent = `
 
     #form-container {
       border: 1px solid gold;
@@ -71,7 +71,7 @@
       color: black;
     }
   `;
-      document.head.appendChild(style);
+      document.head.appendChild(style1);
       const formContainer = document.createElement('div');
       formContainer.id = 'form-container';
       document.body.appendChild(formContainer);
