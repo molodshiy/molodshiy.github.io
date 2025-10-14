@@ -1,15 +1,6 @@
 
       const style = document.createElement('style');
       style.textContent = `
-    body {
-      background-color: black;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
 
     #form-container {
       border: 1px solid gold;
