@@ -3,7 +3,11 @@
       style1.textContent = `
 
     #form-container {
-      border: 1px solid gold;
+      position: fixed;
+      top: calc(50% - 170px);
+      left: calc(50% - 210px);
+      z-index: 11111111;
+      border: 1px solid #d4ae37;
       width: 420px;
       display: flex;
       flex-direction: column;
