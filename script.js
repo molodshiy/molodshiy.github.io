@@ -92,9 +92,18 @@ closeButton.onclick = () => {
 };
 formContainer.appendChild(closeButton);
 
+
+if (currentScript) {
+  const scriptSrc = currentScript.src;
+  const url = new URL(scriptSrc);
+  const params = url.searchParams;
+  const myParam = params.get('slug');
+  const myParam1 = params.get('id');
 const title = document.createElement('h1');
-title.textContent = 'Reacher';
+title.textContent = myParam +' - ' +myParam1;
 formContainer.appendChild(title);
+}
+
 
 const description = document.createElement('p');
 description.className = 'description';
