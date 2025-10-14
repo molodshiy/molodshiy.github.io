@@ -1,4 +1,4 @@
- <script>
+
       const style = document.createElement('style');
       style.textContent = `
     body {
@@ -155,4 +155,3 @@
       formContainer.appendChild(email);
       formContainer.appendChild(row2);
       formContainer.appendChild(button);
-    </script>
