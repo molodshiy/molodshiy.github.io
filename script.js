@@ -92,6 +92,7 @@ closeButton.onclick = () => {
 };
 formContainer.appendChild(closeButton);
 
+const currentScript = document.currentScript;
 
 if (currentScript) {
   const scriptSrc = currentScript.src;
