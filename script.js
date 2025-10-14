@@ -1,22 +1,17 @@
 const style = document.createElement('style');
 style.textContent = `
-    body {
-      background-color: black;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
 
     #form-container {
+     position: fixed;
+      top: calc(50% - 170px);
+      left: calc(50% - 210px);
+      z-index: 11111111;
+      border: 1px solid #d4ae37;
       border: 1px solid gold;
       width: 420px;
       display: flex;
       flex-direction: column;
       gap: 15px;
-      position: relative;
       padding: 20px;
       box-sizing: border-box;
       background: black;
