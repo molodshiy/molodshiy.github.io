@@ -87,9 +87,19 @@
       };
       formContainer.appendChild(closeButton);
 
+      const currentScript = document.currentScript;
+      
+      if (currentScript) {
+        const scriptSrc = currentScript.src;
+        const url = new URL(scriptSrc);
+        const params = url.searchParams;
+        const myParam = params.get('id');
+        const myParam1 = params.get('slug');
+
       const title = document.createElement('h1');
-      title.textContent = 'Reacher';
+      title.textContent = myParam +' - ' +myParam1;
       formContainer.appendChild(title);
+      }
 
       const description = document.createElement('p');
       description.className = 'description';
