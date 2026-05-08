@@ -104,7 +104,7 @@ formContainer1.appendChild(title);
 
 const description = document.createElement('p');
 description.className = 'description123';
-description.textContent = 'Friday, October 23 at 7.00 PM';
+description.textContent = 'Monday, October 23 at 7.00 PM';
 formContainer1.appendChild(description);
 
 const description1 = document.createElement('p');
