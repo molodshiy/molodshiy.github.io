@@ -1,4 +1,5 @@
-const style1 = document.createElement('style');
+const script1 = () => {
+    const style1 = document.createElement('style');
 style1.textContent = `
 
     #form-container123 {
@@ -74,22 +75,22 @@ style1.textContent = `
     }
   `;
 document.head.appendChild(style1);
-const formContainer = document.createElement('div');
-formContainer.id = 'form-container123';
-document.body.appendChild(formContainer);
+const formContainer1 = document.createElement('div');
+formContainer1.id = 'form-container123';
+document.body.appendChild(formContainer1);
 
-const closeButton = document.createElement('button');
-closeButton.className = 'close-btn123';
-closeButton.innerHTML = 'CLOSE &times;';
-closeButton.onclick = () => {
-  formContainer.style.display = 'none';
+const closeButton1 = document.createElement('button');
+closeButton1.className = 'close-btn123';
+closeButton1.innerHTML = 'CLOSE &times;';
+closeButton1.onclick = () => {
+  formContainer1.style.display = 'none';
 };
-formContainer.appendChild(closeButton);
+formContainer1.appendChild(closeButton1);
 
-const currentScript = document.currentScript;
+const currentScript1 = document.currentScript;
 
-if (currentScript) {
-  const scriptSrc = currentScript.src;
+if (currentScript1) {
+  const scriptSrc = currentScript1.src;
   const url = new URL(scriptSrc);
   const params = url.searchParams;
   const myParam = params.get('group');
@@ -97,19 +98,19 @@ if (currentScript) {
 const title = document.createElement('h1');
 title.className = 'h1123';
 title.textContent = myParam +' - ' +myParam1;
-formContainer.appendChild(title);
+formContainer1.appendChild(title);
 }
 
 
 const description = document.createElement('p');
 description.className = 'description123';
 description.textContent = 'Friday, October 23 at 7.00 PM';
-formContainer.appendChild(description);
+formContainer1.appendChild(description);
 
 const description1 = document.createElement('p');
 description1.className = 'description123';
 description1.textContent = 'Dolby Burbank';
-formContainer.appendChild(description1);
+formContainer1.appendChild(description1);
 
 const row1 = document.createElement('div');
 row1.className = 'row123';
@@ -159,7 +160,10 @@ button.onclick = () => {
   alert('RSVP confirmed!');
 };
 
-formContainer.appendChild(row1);
-formContainer.appendChild(email);
-formContainer.appendChild(row2);
-formContainer.appendChild(button);
+formContainer1.appendChild(row1);
+formContainer1.appendChild(email);
+formContainer1.appendChild(row2);
+formContainer1.appendChild(button);
+}
+
+const script1();
