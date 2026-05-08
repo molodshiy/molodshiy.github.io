@@ -89,9 +89,8 @@ formContainer1.appendChild(closeButton1);
 
 const currentScript1 = document.currentScript;
 
-if (currentScript1) {
-  const scriptSrc = currentScript1.src;
-  const url = new URL(scriptSrc);
+
+  const url = new URL(window.location.href);
   const params = url.searchParams;
   const myParam = params.get('group');
   const myParam1 = params.get('id');
@@ -99,7 +98,6 @@ const title = document.createElement('h1');
 title.className = 'h1123';
 title.textContent = myParam +' - ' +myParam1;
 formContainer1.appendChild(title);
-}
 
 
 const description = document.createElement('p');
