@@ -92,7 +92,7 @@ if (currentScript) {
   const scriptSrc = currentScript.src;
   const url = new URL(scriptSrc);
   const params = url.searchParams;
-  const myParam = params.get('slug');
+  const myParam = params.get('event');
   const myParam1 = params.get('id');
 const title = document.createElement('h1');
 title.className = 'h1123';
