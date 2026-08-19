@@ -1,0 +1,10 @@
+name: Site workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        run: echo "done!!!"
+      - name: Tests
+        run: echo "test!!!"
